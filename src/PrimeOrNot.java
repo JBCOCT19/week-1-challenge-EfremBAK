@@ -92,15 +92,14 @@ public class PrimeOrNot {
                         if (res == 0)//no remainder
                             counter = counter + 1;
                         x++;
-                        if (counter > 3)// this will stop the loop asa it checks if its a prime or not
+                        if (counter > 5)// this will stop the loop asa it checks if its a prime or not
                             break;
                     } while (x <= input);//end of dowhile
                 }
-                if (counter == 2) {//prime definition
-                    System.out.println(input + " is a prime number ");
-                } else {
+                if (counter >3) {//prime definition
                     System.out.println(input + " is NOT a prime number ");
-                }
+                } else if (counter == 2)  {
+                    System.out.println(input + " is a prime number ");}
 
             } else if (opt == 'R') {
 // this is the random pick from computer program
@@ -115,17 +114,17 @@ public class PrimeOrNot {
                             counter = counter + 1;
                         x++;
 
-                        if (counter > 3) // this will stop the loop asa it checks if its a prime or not
+                        if (counter > 5) // this will stop the loop asa it checks if its a prime or not
                             break;
 
                     } while (x <= ran);
 //end of dowhile
 
 
-                    if (counter == 2) {//prime definition
-                        System.out.println(ran + " is a prime number ");
-                    } else {
+                    if (counter >3) {//prime definition
                         System.out.println(ran + " is NOT a prime number ");
+                    } else if (counter == 2)  {
+                        System.out.println(ran + " is a prime number ");
                     }
 
                 }// end of cycle
